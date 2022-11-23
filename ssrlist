@@ -20,187 +20,12 @@ dns:
  
 proxies:
   # 下面放入你的节点信息（可以多个，认证仔细点！），节点名字支持 🇨🇳 🇭🇰 🇺🇸 🇯🇵 🇰🇷 🇨🇦 🇬🇧 🇩🇪 🇸🇬 🇲🇴 等图标。
-  - name: "我的vless-ws1"
-    type: vless
-    server: 172.67.144.198
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
- 
-  - name: "我的vless-ws2"
-    type: vless
-    server: 141.101.90.13
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws3"
-    type: vless
-    server: 104.17.20.71
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws4"
-    type: vless
-    server: 141.101.122.127
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws5"
-    type: vless
-    server: 190.93.247.224
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws6"
-    type: vless
-    server: 162.159.128.113
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws7"
-    type: vless
-    server: 104.18.67.72
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws8"
-    type: vless
-    server: 141.101.114.243
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws9"
-    type: vless
-    server: 190.93.247.170
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-  - name: "我的vless-ws10"
-    type: vless
-    server: 190.93.247.62
-    port: 443
-    uuid: 88ee3887-c03f-4403-bc3a-da6f06848821
-    udp: true
-    tls: true
-    network: ws
-    servername: www.iamwumao.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/iamwumao?ed=2048"
-      headers:
-        Host: www.iamwumao.top
-
-
-  - name: "YEH vless-ws"
-    type: vless
-    server: test.yanniyehssr.top
-    port: 443
-    uuid: e939afe0-eeb0-454e-d391-2b844c4169c2
-    udp: true
-    tls: true
-    network: ws
-    servername: test.yanniyehssr.top # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/books.htm?ed=2048"
-      headers:
-        Host: test.yanniyehssr.top
-
-  - name: "YEH vless-ws NLD"
-    type: vless
-    server: ams.unicn.tech
-    port: 2053
-    uuid: 6f1cebc8-4070-405a-f9b5-cac31d963678
-    udp: true
-    tls: true
-    network: ws
-    servername: ams.unicn.tech # priority over wss host
-    # skip-cert-verify: true
-    ws-opts:
-      path: "/ams?ed=2048"
-      headers:
-        Host: ams.unicn.tech
-
+  - {name: 我的vless-ws1, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 我的vless-ws2, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 我的vless-ws3, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 我的vless-ws4, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 我的vless-ws5, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 我的vless-ws6, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -213,12 +38,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
   - name: ♻️ 自动选择
     type: load-balance
     url: http://www.gstatic.com/generate_204
@@ -231,12 +50,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -249,12 +62,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
   - name: 📲 电报信息
     type: select
     proxies:
@@ -266,12 +73,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -283,12 +84,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -300,12 +95,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -318,12 +107,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -352,12 +135,6 @@ proxy-groups:
       - 我的vless-ws4
       - 我的vless-ws5
       - 我的vless-ws6
-      - 我的vless-ws7
-      - 我的vless-ws8
-      - 我的vless-ws9
-      - 我的vless-ws10
-      - YEH vless-ws
-      - YEH vless-ws NLD
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
