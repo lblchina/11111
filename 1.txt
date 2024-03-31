@@ -1,0 +1,386 @@
+port: 6390
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 114.114.114.114
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://208.67.222.222
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+proxies:                                 
+- name: hysteria2节点                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8000                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点1                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8001                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点2                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8002                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点3                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8003                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点4                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8004                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点5                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8005                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点6                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8016                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点7                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8007                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点8                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8008                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点9                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8009                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点10                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8010                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点11                           
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8011                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点12                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8012                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点13                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8013                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点14                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8014                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点15                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8015                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点16                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8016                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点17                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8017                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点18                           
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8018                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点19                           
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8019                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点20                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8020                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点21                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8021                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点22                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8022                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点23                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8023                               
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点24                          
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8024                               
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点25                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8025                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点26                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8026                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点27                          
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8027                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点28                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8028                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点29                           
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8029                                
+  password: c032e331-d4cc-4c98-be96-f9932155df91                              
+  alpn:
+    - h3
+  sni: fuckyou.com                               
+  skip-cert-verify: false
+  fast-open: true
+- name: hysteria2节点30                            
+  type: hysteria2                                      
+  server: 10.1.0.2                               
+  port: 8030                                
+  password: 30a1f59f-2939-4838-9824-a8947846eb2e                             
+  alpn:
+    - h3
+  sni: osaka.prettycn.com                              
+  skip-cert-verify: false
+  fast-open: true
+proxy-groups:
+
+- name: 自动选择
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 600
+  tolerance: 50
+  proxies:                             
+    - hysteria2节点
+    - hysteria2节点1
+    - hysteria2节点2
+    - hysteria2节点3
+    - hysteria2节点4
+    - hysteria2节点5
+    - hysteria2节点6
+    - hysteria2节点7
+    - hysteria2节点8
+    - hysteria2节点9
+    - hysteria2节点10
+    - hysteria2节点11
+    - hysteria2节点12
+    - hysteria2节点13
+    - hysteria2节点14
+    - hysteria2节点15
+    - hysteria2节点16
+    - hysteria2节点17
+    - hysteria2节点18
+    - hysteria2节点19
+    - hysteria2节点20
+    - hysteria2节点21
+    - hysteria2节点22
+    - hysteria2节点23
+    - hysteria2节点24
+    - hysteria2节点25
+    - hysteria2节点26
+    - hysteria2节点27
+    - hysteria2节点28
+    - hysteria2节点29
+    - hysteria2节点30
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,自动选择
+
+
+
+
